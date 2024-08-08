@@ -1,10 +1,14 @@
 import React from "react";
-import { createRoot } from 'react-dom/client';
+import Content from "./Content";
+import Info from "./Info";
 
-const App = () => {
-    return <h1>This is my react app</h1>
+export default function App() {
+    return <section className="home">
+        <div className="hamburger-icon"></div>
+        <Info />
+        <Content />
+    </section>;
 }
 
-const appDiv = document.getElementById("app")
-const root = createRoot(appDiv)
-root.render(<App />)
+
+
