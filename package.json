@@ -1,0 +1,25 @@
+{
+  "name": "parcel-intro",
+  "version": "1.0.0",
+  "description": "run parcel src/index.html to run the server for this application",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "watch": "parcel src/index.html",
+    "production": "parcel build src/index.html -d build --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^9.0.0",
+    "parcel-bundler": "^1.12.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
