@@ -28979,11 +28979,27 @@ function Info() {
     className: "info-section"
   }, _react.default.createElement("div", {
     className: "logo"
-  }), _react.default.createElement("div", {
+  }, "JEFFREY"), _react.default.createElement("div", {
     className: "info-box"
   }, _react.default.createElement("h4", null, "Email"), _react.default.createElement("p", null, "martinezjf2@gmail.com"), _react.default.createElement("h4", null, "Phone"), _react.default.createElement("p", null, "123-456-7890"), _react.default.createElement("h4", null, "Find Me On"), _react.default.createElement("div", {
     className: "icon-section"
-  }, _react.default.createElement("i", null), _react.default.createElement("i", null), _react.default.createElement("i", null), _react.default.createElement("i", null))));
+  }, _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-youtube"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-twitter"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-instagram"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-facebook"
+  })))));
 }
 },{"react":"../node_modules/react/index.js"}],"js/App.js":[function(require,module,exports) {
 "use strict";
@@ -29000,10 +29016,20 @@ function App() {
   return _react.default.createElement("section", {
     className: "home"
   }, _react.default.createElement("div", {
-    className: "hamburger-icon"
+    className: "menu-icon"
   }, _react.default.createElement("i", {
-    "class": "fa-solid fa-bars"
-  })), _react.default.createElement(_Info.default, null), _react.default.createElement(_Content.default, null));
+    "class": "fa-solid fa-bars fa"
+  })), _react.default.createElement("section", {
+    id: "menu"
+  }, _react.default.createElement("nav", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Home"), _react.default.createElement("a", {
+    href: "#"
+  }, "About"), _react.default.createElement("a", {
+    href: "#"
+  }, "Portfolio"), _react.default.createElement("a", {
+    href: "#"
+  }, "Contact"))), _react.default.createElement(_Info.default, null), _react.default.createElement(_Content.default, null));
 }
 },{"react":"../node_modules/react/index.js","./Content":"js/Content.js","./Info":"js/Info.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
@@ -29048,7 +29074,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64804" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57517" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
