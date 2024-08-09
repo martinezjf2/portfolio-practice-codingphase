@@ -36,6 +36,60 @@
         background: white;
         width: 65%;
         height: 100%;
+        // padding: 0 0 0 25%;
+        .img-container {
+            width: 30%;
+            display: inline-block;
+            position: relative;
+            height: 100%;
+
+            .user-img {
+                position: absolute;
+                top: 56px;
+                left: -250px;
+                width: 500px;
+                height: calc(100% - 112px);
+                background: url("../img/jeffrey.jpg") no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        }
+        .profile-section {
+            vertical-align: top;
+            display: inline-block;
+            // width: 70%;
+            max-width: 500px;
+            padding: 20% 0 0;
+
+            .profile {
+
+                h1 {
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 0 0 1rem;
+                    span {
+                        color: $color1;
+                    }
+                }
+
+                h5 {
+                    font-size: 1.1rem;
+                    margin: 0 0 2rem;
+
+                }
+                p {
+                    color: $color5;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem;
+
+                }
+
+            }
+        }
       
 
     }

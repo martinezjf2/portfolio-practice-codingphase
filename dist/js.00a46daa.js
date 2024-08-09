@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../.nvm/versions/node/v20.5.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/react/cjs/react.development.js":[function(require,module,exports) {
+},{"./../img/jeffrey.jpg":[["jeffrey.0f4586de.jpg","img/jeffrey.jpg"],"img/jeffrey.jpg"],"_css_loader":"../../../.nvm/versions/node/v20.5.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/react/cjs/react.development.js":[function(require,module,exports) {
 /**
  * @license React
  * react.development.js
@@ -28952,14 +28952,18 @@ function Content() {
   return _react.default.createElement("section", {
     className: "content-area"
   }, _react.default.createElement("div", {
+    className: "img-container"
+  }, _react.default.createElement("div", {
     className: "user-img"
-  }), _react.default.createElement("div", {
+  })), _react.default.createElement("div", {
+    className: "profile-section"
+  }, _react.default.createElement("div", {
     className: "profile"
-  }, _react.default.createElement("h1", null, "Jeffrey ", _react.default.createElement("br", null), "Martinez"), _react.default.createElement("h5", null, "Software Developer"), _react.default.createElement("p", null, "Hi my name is Jeffrey Martinez and I am an experienced full stack developer from Farmingdale, New York graduating from Flatiron School and Bellevue University."), _react.default.createElement("div", {
+  }, _react.default.createElement("h1", null, "Jeffrey ", _react.default.createElement("br", null), _react.default.createElement("span", null, "Martinez")), _react.default.createElement("h5", null, "Software Developer"), _react.default.createElement("p", null, "Hi my name is Jeffrey Martinez and I am an experienced full stack developer from Farmingdale, New York graduating from Flatiron School and Bellevue University."), _react.default.createElement("div", {
     className: "primary-btn"
   }, "Portfolio"), _react.default.createElement("div", {
     className: "ghost-btn"
-  }, "Resume")));
+  }, "Resume"))));
 }
 },{"react":"../node_modules/react/index.js"}],"js/Info.js":[function(require,module,exports) {
 "use strict";
@@ -29042,7 +29046,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60447" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64599" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
