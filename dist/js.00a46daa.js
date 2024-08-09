@@ -29001,7 +29001,9 @@ function App() {
     className: "home"
   }, _react.default.createElement("div", {
     className: "hamburger-icon"
-  }), _react.default.createElement(_Info.default, null), _react.default.createElement(_Content.default, null));
+  }, _react.default.createElement("i", {
+    "class": "fa-solid fa-bars"
+  })), _react.default.createElement(_Info.default, null), _react.default.createElement(_Content.default, null));
 }
 },{"react":"../node_modules/react/index.js","./Content":"js/Content.js","./Info":"js/Info.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
@@ -29046,7 +29048,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64599" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64804" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
