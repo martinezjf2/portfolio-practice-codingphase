@@ -18,29 +18,63 @@ export default function Resume() {
 
       {/* Content Area */}
       <section className="content-area">
-        {/* <div className="img-container">
-          <div className="user-img"></div>
-        </div>
-        <div className="profile-section">
-          <div className="profile">
-            <h1>
-              Jeffrey <br></br>
-              <span>Martinez</span>
-            </h1>
-            <h5>Software Developer</h5>
-            <p>
-              Hi my name is Jeffrey Martinez and I am an experienced full stack
-              developer from Farmingdale, New York graduating from Flatiron
-              School and Bellevue University.
-            </p>
-            <a href="" className="primary-btn">
-              Portfolio
-            </a>
-            <a href="./resume" className="ghost-btn">
-              Resume
-            </a>
+        <div className="scroll-section">
+          <div className="main-category">
+            <div className="title">
+              <h1>Education</h1>
+            </div>
+            <div className="xp-section">
+              <div className="xp-box">
+                <h5>Masters of Computer Science in Web Development</h5>
+                <p>New York University, NY</p>
+                <p>Session: 2012 -2014</p>
+              </div>
+              <div className="xp-box">
+                <h5>Title</h5>
+                <p>New York University</p>
+                <p>New York University</p>
+              </div>
+              <div className="xp-box">
+                <h5>Title</h5>
+                <p>New York University</p>
+                <p>New York University</p>
+              </div>
+              <div className="xp-box">
+                <h5>Title</h5>
+                <p>New York University</p>
+                <p>New York University</p>
+              </div>
+            </div>
           </div>
-        </div> */}
+
+          <div className="main-category">
+            <div className="title">
+              <h1>Work Experience</h1>
+            </div>
+            <div className="xp-section">
+              <div className="xp-box">
+                <h5>Masters of Computer Science in Web Development</h5>
+                <p>New York University, NY</p>
+                <p>Session: 2012 -2014</p>
+              </div>
+              <div className="xp-box">
+                <h5>Title</h5>
+                <p>New York University</p>
+                <p>New York University</p>
+              </div>
+              <div className="xp-box">
+                <h5>Title</h5>
+                <p>New York University</p>
+                <p>New York University</p>
+              </div>
+              <div className="xp-box">
+                <h5>Title</h5>
+                <p>New York University</p>
+                <p>New York University</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Info Area */}

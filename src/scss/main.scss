@@ -115,3 +115,10 @@ body {
     }
   }
 }
+
+.scroll-section {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 56px;
+}

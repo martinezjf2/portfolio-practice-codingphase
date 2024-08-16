@@ -38584,7 +38584,37 @@ function Resume() {
     href: "#"
   }, "Contact"))), _react.default.createElement("section", {
     className: "content-area"
-  }), _react.default.createElement("section", {
+  }, _react.default.createElement("div", {
+    className: "scroll-section"
+  }, _react.default.createElement("div", {
+    className: "main-category"
+  }, _react.default.createElement("div", {
+    className: "title"
+  }, _react.default.createElement("h1", null, "Education")), _react.default.createElement("div", {
+    className: "xp-section"
+  }, _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Masters of Computer Science in Web Development"), _react.default.createElement("p", null, "New York University, NY"), _react.default.createElement("p", null, "Session: 2012 -2014")), _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")), _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")), _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")))), _react.default.createElement("div", {
+    className: "main-category"
+  }, _react.default.createElement("div", {
+    className: "title"
+  }, _react.default.createElement("h1", null, "Work Experience")), _react.default.createElement("div", {
+    className: "xp-section"
+  }, _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Masters of Computer Science in Web Development"), _react.default.createElement("p", null, "New York University, NY"), _react.default.createElement("p", null, "Session: 2012 -2014")), _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")), _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")), _react.default.createElement("div", {
+    className: "xp-box"
+  }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")))))), _react.default.createElement("section", {
     className: "info-section"
   }, _react.default.createElement("div", {
     className: "logo"
@@ -38677,7 +38707,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61113" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62467" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
