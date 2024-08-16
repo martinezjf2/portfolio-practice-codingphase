@@ -18,8 +18,8 @@ export default function Content() {
             developer from Farmingdale, New York graduating from Flatiron School
             and Bellevue University.
           </p>
-          <div className="primary-btn">Portfolio</div>
-          <div className="ghost-btn">Resume</div>
+          <a href="" className="primary-btn">Portfolio</a>
+          <a href="" className="ghost-btn">Resume</a>
         </div>
       </div>
     </section>

@@ -19,12 +19,12 @@ body {
   right: 36px;
   top: 36px;
   padding: 20px;
+  z-index: 11;
   cursor: pointer;
   .fa-solid {
     font-size: 2rem;
     color: $color1;
   }
-  z-index: 11;
 }
 
 .primary-btn {
@@ -39,9 +39,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-right: 15px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: black;
+    color: $color3;
+
+  }
 }
 
 .ghost-btn {
+    text-decoration: none;
   border: 4px solid $color1;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -52,6 +60,10 @@ body {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 3px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    border-color: $hoverColor;
+  }
 }
 
 
