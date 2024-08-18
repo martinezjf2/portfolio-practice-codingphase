@@ -1,47 +1,44 @@
 import React from "react";
 
-export default function Home() {
+export default function Work() {
   return (
-    <section className="home">
+    <section className="work">
       <div className="menu-icon">
         <i class="fa-solid fa-bars fa"></i>
         {/* <i class="fa-regular fa-circle-xmark fa"></i> */}
       </div>
       <section id="menu">
         <nav>
-          <a href="/">Home</a>
+          <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="/work">Portfolio</a>
-          <a href="/contact">Contact</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
         </nav>
       </section>
 
       {/* Content Area */}
       <section className="content-area">
-        <div className="img-container">
-          <div className="user-img"></div>
-        </div>
-        <div className="profile-section">
-          <div className="profile">
-            <h1>
-              Jeffrey <br></br>
-              <span>Martinez</span>
-            </h1>
-            <h5>Software Developer</h5>
-            <p>
-              Hi my name is Jeffrey Martinez and I am an experienced full stack
-              developer from Farmingdale, New York graduating from Flatiron
-              School and Bellevue University.
-            </p>
-            <a href="/work" className="primary-btn">
-              Portfolio
-            </a>
-            <a href="/resume" className="ghost-btn">
-              Resume
-            </a>
-            <a href="/contact" className="ghost-btn" style={{margin: "20px"}}>
-              Contact
-            </a>
+        <div className="scroll-section">
+          <div className="work-section">
+            <div className="title">
+              <h1>Latest Works</h1>
+            </div>
+            <div className="project-section">
+              <div className="project-box newStyle">
+                <div className="grey-bg">
+                  <div className="project-info">
+                    <div className="project-details">
+                      Client: Nike Year: 2017 Type: Ecommerce
+                    </div>
+                    <div className="project-title">The Last Yeezys</div>
+                    <i
+                      className="fa fa-long-arrow-right"
+                      axis-hidden="true"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

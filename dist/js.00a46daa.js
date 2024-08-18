@@ -38507,13 +38507,13 @@ function Home() {
   })), _react.default.createElement("section", {
     id: "menu"
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "Home"), _react.default.createElement("a", {
     href: "#"
   }, "About"), _react.default.createElement("a", {
-    href: "#"
+    href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
-    href: "#"
+    href: "/contact"
   }, "Contact"))), _react.default.createElement("section", {
     className: "content-area"
   }, _react.default.createElement("div", {
@@ -38525,14 +38525,21 @@ function Home() {
   }, _react.default.createElement("div", {
     className: "profile"
   }, _react.default.createElement("h1", null, "Jeffrey ", _react.default.createElement("br", null), _react.default.createElement("span", null, "Martinez")), _react.default.createElement("h5", null, "Software Developer"), _react.default.createElement("p", null, "Hi my name is Jeffrey Martinez and I am an experienced full stack developer from Farmingdale, New York graduating from Flatiron School and Bellevue University."), _react.default.createElement("a", {
-    href: "",
+    href: "/work",
     className: "primary-btn"
   }, "Portfolio"), _react.default.createElement("a", {
-    href: "./resume",
+    href: "/resume",
     className: "ghost-btn"
-  }, "Resume")))), _react.default.createElement("section", {
+  }, "Resume"), _react.default.createElement("a", {
+    href: "/contact",
+    className: "ghost-btn",
+    style: {
+      margin: "20px"
+    }
+  }, "Contact")))), _react.default.createElement("section", {
     className: "info-section"
-  }, _react.default.createElement("div", {
+  }, _react.default.createElement("a", {
+    href: "/",
     className: "logo"
   }, "JEFFREY"), _react.default.createElement("div", {
     className: "info-box"
@@ -38616,7 +38623,178 @@ function Resume() {
     className: "xp-box"
   }, _react.default.createElement("h5", null, "Title"), _react.default.createElement("p", null, "New York University"), _react.default.createElement("p", null, "New York University")))))), _react.default.createElement("section", {
     className: "info-section"
+  }, _react.default.createElement("a", {
+    href: "/",
+    className: "logo"
+  }, "JEFFREY"), _react.default.createElement("div", {
+    className: "info-box"
+  }, _react.default.createElement("h4", null, "Email"), _react.default.createElement("p", null, "martinezjf2@gmail.com"), _react.default.createElement("h4", null, "Phone"), _react.default.createElement("p", null, "123-456-7890"), _react.default.createElement("h4", null, "Find Me On"), _react.default.createElement("div", {
+    className: "icon-section"
+  }, _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-youtube"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-twitter"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-instagram"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-facebook"
+  }))))));
+}
+},{"react":"../node_modules/react/index.js"}],"js/containers/Work.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Work;
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function Work() {
+  return _react.default.createElement("section", {
+    className: "work"
   }, _react.default.createElement("div", {
+    className: "menu-icon"
+  }, _react.default.createElement("i", {
+    "class": "fa-solid fa-bars fa"
+  })), _react.default.createElement("section", {
+    id: "menu"
+  }, _react.default.createElement("nav", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Home"), _react.default.createElement("a", {
+    href: "#"
+  }, "About"), _react.default.createElement("a", {
+    href: "#"
+  }, "Portfolio"), _react.default.createElement("a", {
+    href: "#"
+  }, "Contact"))), _react.default.createElement("section", {
+    className: "content-area"
+  }, _react.default.createElement("div", {
+    className: "scroll-section"
+  }, _react.default.createElement("div", {
+    className: "work-section"
+  }, _react.default.createElement("div", {
+    className: "title"
+  }, _react.default.createElement("h1", null, "Latest Works")), _react.default.createElement("div", {
+    className: "project-section"
+  }, _react.default.createElement("div", {
+    className: "project-box newStyle"
+  }, _react.default.createElement("div", {
+    className: "grey-bg"
+  }, _react.default.createElement("div", {
+    className: "project-info"
+  }, _react.default.createElement("div", {
+    className: "project-details"
+  }, "Client: Nike Year: 2017 Type: Ecommerce"), _react.default.createElement("div", {
+    className: "project-title"
+  }, "The Last Yeezys"), _react.default.createElement("i", {
+    className: "fa fa-long-arrow-right",
+    "axis-hidden": "true"
+  })))))))), _react.default.createElement("section", {
+    className: "info-section"
+  }, _react.default.createElement("a", {
+    href: "/",
+    className: "logo"
+  }, "JEFFREY"), _react.default.createElement("div", {
+    className: "info-box"
+  }, _react.default.createElement("h4", null, "Email"), _react.default.createElement("p", null, "martinezjf2@gmail.com"), _react.default.createElement("h4", null, "Phone"), _react.default.createElement("p", null, "123-456-7890"), _react.default.createElement("h4", null, "Find Me On"), _react.default.createElement("div", {
+    className: "icon-section"
+  }, _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-youtube"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-twitter"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-instagram"
+  })), _react.default.createElement("a", {
+    href: "#"
+  }, _react.default.createElement("i", {
+    "class": "fa-brands fa-facebook"
+  }))))));
+}
+},{"react":"../node_modules/react/index.js"}],"js/containers/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Contact;
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function Contact() {
+  return _react.default.createElement("section", {
+    className: "contact"
+  }, _react.default.createElement("div", {
+    className: "menu-icon"
+  }, _react.default.createElement("i", {
+    "class": "fa-solid fa-bars fa"
+  })), _react.default.createElement("section", {
+    id: "menu"
+  }, _react.default.createElement("nav", null, _react.default.createElement("a", {
+    href: "/"
+  }, "Home"), _react.default.createElement("a", {
+    href: "#"
+  }, "About"), _react.default.createElement("a", {
+    href: "/work"
+  }, "Portfolio"), _react.default.createElement("a", {
+    href: "#"
+  }, "Contact"))), _react.default.createElement("section", {
+    className: "content-area"
+  }, _react.default.createElement("div", {
+    className: "img-container"
+  }, _react.default.createElement("div", {
+    className: "form-section"
+  }, _react.default.createElement("form", {
+    action: "/",
+    method: "POST"
+  }, _react.default.createElement("h4", null, "Send a Message"), _react.default.createElement("input", {
+    type: "text",
+    name: "name",
+    required: true,
+    placeholder: "Name"
+  }), _react.default.createElement("input", {
+    type: "email",
+    name: "email",
+    required: true,
+    placeholder: "Email"
+  }), _react.default.createElement("input", {
+    type: "text",
+    name: "budget",
+    required: true,
+    placeholder: "Budget"
+  }), _react.default.createElement("textarea", {
+    name: "message",
+    rows: 12,
+    required: true,
+    placeholder: "Message"
+  }), _react.default.createElement("button", {
+    type: "submit"
+  }, "Send Message")))), _react.default.createElement("div", {
+    className: "contact-section"
+  }, _react.default.createElement("div", {
+    className: "contact-info"
+  }, _react.default.createElement("h1", null, "Contact Us"), _react.default.createElement("div", {
+    className: "contact-box"
+  }, _react.default.createElement("h5", null, "Phone"), _react.default.createElement("p", null, "(452) 622 4378")), _react.default.createElement("div", {
+    className: "contact-box"
+  }, _react.default.createElement("h5", null, "Email"), _react.default.createElement("p", null, "jane@gmail.com")), _react.default.createElement("div", {
+    className: "contact-box"
+  }, _react.default.createElement("h5", null, "Address"), _react.default.createElement("p", null, "456 Grant Ave, Ridgewood New York, 11386"))))), _react.default.createElement("section", {
+    className: "info-section"
+  }, _react.default.createElement("a", {
+    href: "/",
     className: "logo"
   }, "JEFFREY"), _react.default.createElement("div", {
     className: "info-box"
@@ -38652,6 +38830,8 @@ require("../scss/main.scss");
 var _reactRouterDom = require("react-router-dom");
 var _Home = _interopRequireDefault(require("./containers/Home"));
 var _Resume = _interopRequireDefault(require("./containers/Resume"));
+var _Work = _interopRequireDefault(require("./containers/Work"));
+var _Contact = _interopRequireDefault(require("./containers/Contact"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function App() {
   return _react.default.createElement(_reactRouterDom.Routes, null, _react.default.createElement(_reactRouterDom.Route, {
@@ -38661,9 +38841,15 @@ function App() {
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/resume",
     element: _react.default.createElement(_Resume.default, null)
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/work",
+    element: _react.default.createElement(_Work.default, null)
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/contact",
+    element: _react.default.createElement(_Contact.default, null)
   }));
 }
-},{"react":"../node_modules/react/index.js","../scss/main.scss":"scss/main.scss","react-router-dom":"../node_modules/react-router-dom/dist/index.js","./containers/Home":"js/containers/Home.js","./containers/Resume":"js/containers/Resume.js"}],"js/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../scss/main.scss":"scss/main.scss","react-router-dom":"../node_modules/react-router-dom/dist/index.js","./containers/Home":"js/containers/Home.js","./containers/Resume":"js/containers/Resume.js","./containers/Work":"js/containers/Work.js","./containers/Contact":"js/containers/Contact.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
@@ -38707,7 +38893,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62467" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63900" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

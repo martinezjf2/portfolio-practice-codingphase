@@ -1,0 +1,124 @@
+.work {
+  .info-section {
+    width: 20%;
+  }
+  .content-area {
+    margin-left: 25%;
+    background: $color3;
+    width: 80%;
+    min-width: 300px;
+    height: 100%;
+    overflow: hidden;
+
+    .work-section {
+      margin-bottom: 36px;
+      h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 56px;
+      }
+      .project-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+
+        .project-box.newStyle {
+          background: url("../img/jeffrey.jpg") no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 400px;
+        }
+
+        .project-box {
+          padding: 30px;
+          transition: all 0.3s ease-in-out;
+          position: relative;
+
+          .grey-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $color7;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            &:hover {
+              opacity: 0.8;
+              .project-info {
+                .project-details {
+                    transform: translate3d(0,0,0);
+                    opacity: 1;
+                }
+                .project-title {
+                 transform: translate3d(0,0,0);
+                 opacity: 1;
+
+                }
+              }
+            }
+          }
+
+          cursor: pointer;
+          &:hover {
+            -webkit-box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+            -moz-box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+          }
+          .project-info {
+            position: absolute;
+            bottom: 0;
+            padding: 56px;
+            width: 100%;
+            .project-details {
+                position: relative;
+                font-size: 1rem;
+                text-transform: capitalize;
+                margin: 0 0 1rem;
+                 transform: translate3d(-200px,0,0);
+                 transition: all .5s ease-in-out;
+
+
+            }
+            .project-title {
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                transition: all .6s ease-in-out .1s;
+                opacity: 0;
+                transform: translate3d(-100px,0,0);
+
+
+
+            }
+            .fa-long-arrow-right {
+                position: absolute;
+                bottom: 56px;
+                right: 56px;
+                font-size: 2rem;
+
+
+            }
+          }
+
+          h5 {
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-bottom: 1.4rem;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-weight: 300;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

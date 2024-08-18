@@ -61,7 +61,9 @@ table {
     color: white;
     line-height: 0;
     height: 150px;
-    width: 200px; }
+    width: 200px;
+    cursor: pointer;
+    text-decoration: none; }
   .info-section .info-box {
     bottom: 60px;
     position: absolute; }
@@ -172,6 +174,185 @@ table {
           font-weight: 300;
           font-size: 1rem;
           margin-bottom: 1rem; }
+
+.work .info-section {
+  width: 20%; }
+
+.work .content-area {
+  margin-left: 25%;
+  background: #fefefe;
+  width: 80%;
+  min-width: 300px;
+  height: 100%;
+  overflow: hidden; }
+  .work .content-area .work-section {
+    margin-bottom: 36px; }
+    .work .content-area .work-section h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 56px; }
+    .work .content-area .work-section .project-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1000px; }
+      .work .content-area .work-section .project-section .project-box.newStyle {
+        background: url("/jeffrey.0f4586de.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px; }
+      .work .content-area .work-section .project-section .project-box {
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        cursor: pointer; }
+        .work .content-area .work-section .project-section .project-box .grey-bg {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: #efefefef;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+          overflow: hidden; }
+          .work .content-area .work-section .project-section .project-box .grey-bg:hover {
+            opacity: 0.8; }
+            .work .content-area .work-section .project-section .project-box .grey-bg:hover .project-info .project-details {
+              transform: translate3d(0, 0, 0);
+              opacity: 1; }
+            .work .content-area .work-section .project-section .project-box .grey-bg:hover .project-info .project-title {
+              transform: translate3d(0, 0, 0);
+              opacity: 1; }
+        .work .content-area .work-section .project-section .project-box:hover {
+          -webkit-box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+          -moz-box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12); }
+        .work .content-area .work-section .project-section .project-box .project-info {
+          position: absolute;
+          bottom: 0;
+          padding: 56px;
+          width: 100%; }
+          .work .content-area .work-section .project-section .project-box .project-info .project-details {
+            position: relative;
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin: 0 0 1rem;
+            transform: translate3d(-200px, 0, 0);
+            transition: all .5s ease-in-out; }
+          .work .content-area .work-section .project-section .project-box .project-info .project-title {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all .6s ease-in-out .1s;
+            opacity: 0;
+            transform: translate3d(-100px, 0, 0); }
+          .work .content-area .work-section .project-section .project-box .project-info .fa-long-arrow-right {
+            position: absolute;
+            bottom: 56px;
+            right: 56px;
+            font-size: 2rem; }
+        .work .content-area .work-section .project-section .project-box h5 {
+          font-weight: 500;
+          font-size: 1.3rem;
+          margin-bottom: 1.4rem;
+          text-transform: uppercase; }
+        .work .content-area .work-section .project-section .project-box p {
+          font-weight: 300;
+          font-size: 1rem;
+          margin-bottom: 1rem; }
+
+.contact .info-section {
+  width: 35%; }
+
+.contact .content-area {
+  margin-left: 35%;
+  background: #fefefe;
+  width: 65%;
+  height: 100%; }
+  .contact .content-area .img-container {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .contact .content-area .img-container .form-section {
+      position: absolute;
+      top: 56px;
+      left: -250px;
+      width: 500px;
+      height: calc(100% - 112px);
+      background: #272727;
+      color: #fefefe;
+      padding: 46px;
+      -webkit-box-shadow: 0px 0px 74px 17px rgba(0, 0, 0, 0.34);
+      -moz-box-shadow: 0px 0px 74px 17px rgba(0, 0, 0, 0.34);
+      box-shadow: 0px 0px 74px 17px rgba(0, 0, 0, 0.34);
+      overflow-y: scroll;
+      overflow-x: hidden; }
+      .contact .content-area .img-container .form-section h4 {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+        font-weight: 500; }
+      .contact .content-area .img-container .form-section input[type="text"],
+      .contact .content-area .img-container .form-section input[type="email"],
+      .contact .content-area .img-container .form-section textarea {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #a9a9a9;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: #a9a9a9;
+        padding: 15px 0; }
+      .contact .content-area .img-container .form-section button[type="submit"] {
+        background: #4b21ff;
+        border: none;
+        font-size: 1.1rem;
+        color: white;
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 17px 30px;
+        border-radius: 30px;
+        text-align: center;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px; }
+  .contact .content-area .contact-section {
+    vertical-align: top;
+    display: inline-block;
+    width: 70%;
+    float: right;
+    padding: 56px 0 0; }
+    .contact .content-area .contact-section .contact-info .contact-box {
+      max-width: 550px;
+      padding: 30px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer; }
+      .contact .content-area .contact-section .contact-info .contact-box:hover {
+        -webkit-box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 20px 74px 17px rgba(0, 0, 0, 0.12); }
+      .contact .content-area .contact-section .contact-info .contact-box h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin: 0 0 1.5rem; }
+      .contact .content-area .contact-section .contact-info .contact-box p {
+        color: #a9a9a9;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0 0 2rem; }
+    .contact .content-area .contact-section .contact-info h1 {
+      font-size: 2.3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 1rem; }
+      .contact .content-area .contact-section .contact-info h1 span {
+        color: #4b21ff; }
 
 * {
   box-sizing: border-box; }

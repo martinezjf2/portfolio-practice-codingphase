@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Home() {
+export default function Contact() {
   return (
-    <section className="home">
+    <section className="contact">
       <div className="menu-icon">
         <i class="fa-solid fa-bars fa"></i>
         {/* <i class="fa-regular fa-circle-xmark fa"></i> */}
@@ -12,36 +12,44 @@ export default function Home() {
           <a href="/">Home</a>
           <a href="#">About</a>
           <a href="/work">Portfolio</a>
-          <a href="/contact">Contact</a>
+          <a href="#">Contact</a>
         </nav>
       </section>
 
       {/* Content Area */}
       <section className="content-area">
         <div className="img-container">
-          <div className="user-img"></div>
+          <div className="form-section">
+            <form action="/" method="POST">
+              <h4>Send a Message</h4>
+              <input type="text" name="name" required placeholder="Name" />
+              <input type="email" name="email" required placeholder="Email" />
+              <input type="text" name="budget" required placeholder="Budget" />
+              <textarea
+                name="message"
+                rows={12}
+                required
+                placeholder="Message"
+              />
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
         </div>
-        <div className="profile-section">
-          <div className="profile">
-            <h1>
-              Jeffrey <br></br>
-              <span>Martinez</span>
-            </h1>
-            <h5>Software Developer</h5>
-            <p>
-              Hi my name is Jeffrey Martinez and I am an experienced full stack
-              developer from Farmingdale, New York graduating from Flatiron
-              School and Bellevue University.
-            </p>
-            <a href="/work" className="primary-btn">
-              Portfolio
-            </a>
-            <a href="/resume" className="ghost-btn">
-              Resume
-            </a>
-            <a href="/contact" className="ghost-btn" style={{margin: "20px"}}>
-              Contact
-            </a>
+        <div className="contact-section">
+          <div className="contact-info">
+            <h1>Contact Us</h1>
+            <div className="contact-box">
+              <h5>Phone</h5>
+              <p>(452) 622 4378</p>
+            </div>
+            <div className="contact-box">
+              <h5>Email</h5>
+              <p>jane@gmail.com</p>
+            </div>
+            <div className="contact-box">
+              <h5>Address</h5>
+              <p>456 Grant Ave, Ridgewood New York, 11386</p>
+            </div>
           </div>
         </div>
       </section>

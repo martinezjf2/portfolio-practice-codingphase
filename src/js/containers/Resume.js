@@ -79,7 +79,7 @@ export default function Resume() {
 
       {/* Info Area */}
       <section className="info-section">
-        <div className="logo">JEFFREY</div>
+        <a href="/" className="logo">JEFFREY</a>
         <div className="info-box">
           <h4>Email</h4>
           <p>martinezjf2@gmail.com</p>
