@@ -10,7 +10,7 @@ export default function Home({handleClick, checkHamburger}) {
       <section id="menu">
         <nav>
           <a href="/">Home</a>
-          <a href="#">About</a>
+          <a href="/">About</a>
           <a href="/work">Portfolio</a>
           <a href="/contact">Contact</a>
         </nav>
@@ -18,9 +18,9 @@ export default function Home({handleClick, checkHamburger}) {
 
       {/* Info Area */}
       <section className="info-section">
-        <div href="/" className="logo">
+        <a href="/" className="logo">
           JEFFREY
-        </div>
+        </a>
 
         <div className="info-box">
           <h4>Email</h4>

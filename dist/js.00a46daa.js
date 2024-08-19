@@ -38512,14 +38512,14 @@ function Home(_ref) {
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
     href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "About"), _react.default.createElement("a", {
     href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
     href: "/contact"
   }, "Contact"))), _react.default.createElement("section", {
     className: "info-section"
-  }, _react.default.createElement("div", {
+  }, _react.default.createElement("a", {
     href: "/",
     className: "logo"
   }, "JEFFREY"), _react.default.createElement("div", {
@@ -38572,23 +38572,26 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Resume;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
-function Resume() {
+function Resume(_ref) {
+  var handleClick = _ref.handleClick,
+    checkHamburger = _ref.checkHamburger;
   return _react.default.createElement("section", {
-    className: "resume"
+    className: "resume ".concat(checkHamburger)
   }, _react.default.createElement("div", {
     className: "menu-icon"
   }, _react.default.createElement("i", {
-    "class": "fa-solid fa-bars fa"
+    "class": "fa-solid fa-bars fa",
+    onClick: handleClick
   })), _react.default.createElement("section", {
     id: "menu"
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "About"), _react.default.createElement("a", {
-    href: "#"
+    href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
-    href: "#"
+    href: "/contact"
   }, "Contact"))), _react.default.createElement("section", {
     className: "info-section"
   }, _react.default.createElement("a", {
@@ -38657,23 +38660,26 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Work;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
-function Work() {
+function Work(_ref) {
+  var handleClick = _ref.handleClick,
+    checkHamburger = _ref.checkHamburger;
   return _react.default.createElement("section", {
-    className: "work"
+    className: "work ".concat(checkHamburger)
   }, _react.default.createElement("div", {
     className: "menu-icon"
   }, _react.default.createElement("i", {
-    "class": "fa-solid fa-bars fa"
+    "class": "fa-solid fa-bars fa",
+    onClick: handleClick
   })), _react.default.createElement("section", {
     id: "menu"
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "About"), _react.default.createElement("a", {
-    href: "#"
+    href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
-    href: "#"
+    href: "/contact"
   }, "Contact"))), _react.default.createElement("section", {
     className: "info-section"
   }, _react.default.createElement("a", {
@@ -38733,26 +38739,29 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Contact;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
-function Contact() {
+function Contact(_ref) {
+  var handleClick = _ref.handleClick,
+    checkHamburger = _ref.checkHamburger;
   return _react.default.createElement("section", {
-    className: "contact"
+    className: "contact ".concat(checkHamburger)
   }, _react.default.createElement("div", {
     className: "menu-icon"
   }, _react.default.createElement("i", {
-    "class": "fa-solid fa-bars fa"
+    "class": "fa-solid fa-bars fa",
+    onClick: handleClick
   })), _react.default.createElement("section", {
     id: "menu"
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
     href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "#"
+    href: "/"
   }, "About"), _react.default.createElement("a", {
     href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
-    href: "#"
+    href: "/contact"
   }, "Contact"))), _react.default.createElement("section", {
     className: "info-section"
-  }, _react.default.createElement("div", {
+  }, _react.default.createElement("a", {
     href: "/",
     className: "logo"
   }, "JEFFREY"), _react.default.createElement("div", {
@@ -38863,13 +38872,22 @@ function App() {
     })
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/resume",
-    element: _react.default.createElement(_Resume.default, null)
+    element: _react.default.createElement(_Resume.default, {
+      handleClick: handleClick,
+      checkHamburger: checkHamburger
+    })
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/work",
-    element: _react.default.createElement(_Work.default, null)
+    element: _react.default.createElement(_Work.default, {
+      handleClick: handleClick,
+      checkHamburger: checkHamburger
+    })
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/contact",
-    element: _react.default.createElement(_Contact.default, null)
+    element: _react.default.createElement(_Contact.default, {
+      handleClick: handleClick,
+      checkHamburger: checkHamburger
+    })
   }));
 }
 },{"react":"../node_modules/react/index.js","../scss/main.scss":"scss/main.scss","react-router-dom":"../node_modules/react-router-dom/dist/index.js","./containers/Home":"js/containers/Home.js","./containers/Resume":"js/containers/Resume.js","./containers/Work":"js/containers/Work.js","./containers/Contact":"js/containers/Contact.js"}],"js/index.js":[function(require,module,exports) {
@@ -38916,7 +38934,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57239" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65106" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

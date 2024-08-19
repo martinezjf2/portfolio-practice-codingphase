@@ -22,10 +22,34 @@ export default function App() {
 
     return (
       <Routes>
-        <Route exact path="/" element={<Home handleClick={handleClick} checkHamburger={checkHamburger} />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <Home handleClick={handleClick} checkHamburger={checkHamburger} />
+          }
+        />
+        <Route
+          path="/resume"
+          element={
+            <Resume handleClick={handleClick} checkHamburger={checkHamburger} />
+          }
+        />
+        <Route
+          path="/work"
+          element={
+            <Work handleClick={handleClick} checkHamburger={checkHamburger} />
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Contact
+              handleClick={handleClick}
+              checkHamburger={checkHamburger}
+            />
+          }
+        />
       </Routes>
     );
 }

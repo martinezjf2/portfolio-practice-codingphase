@@ -1,18 +1,18 @@
 import React from "react";
 
-export default function Work() {
+export default function Work({ handleClick, checkHamburger }) {
   return (
-    <section className="work">
+    <section className={`work ${checkHamburger}`}>
       <div className="menu-icon">
-        <i class="fa-solid fa-bars fa"></i>
+        <i class="fa-solid fa-bars fa" onClick={handleClick}></i>
         {/* <i class="fa-regular fa-circle-xmark fa"></i> */}
       </div>
       <section id="menu">
         <nav>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
+          <a href="/">Home</a>
+          <a href="/">About</a>
+          <a href="/work">Portfolio</a>
+          <a href="/contact">Contact</a>
         </nav>
       </section>
 
@@ -70,8 +70,6 @@ export default function Work() {
           </div>
         </div>
       </section>
-
-      
     </section>
   );
 }

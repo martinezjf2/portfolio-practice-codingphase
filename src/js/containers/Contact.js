@@ -1,26 +1,26 @@
 import React from "react";
 
-export default function Contact() {
+export default function Contact({ handleClick, checkHamburger }) {
   return (
-    <section className="contact">
+    <section className={`contact ${checkHamburger}`}>
       <div className="menu-icon">
-        <i class="fa-solid fa-bars fa"></i>
+        <i class="fa-solid fa-bars fa" onClick={handleClick}></i>
         {/* <i class="fa-regular fa-circle-xmark fa"></i> */}
       </div>
       <section id="menu">
         <nav>
           <a href="/">Home</a>
-          <a href="#">About</a>
+          <a href="/">About</a>
           <a href="/work">Portfolio</a>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </nav>
       </section>
 
       {/* Info Area */}
       <section className="info-section">
-        <div href="/" className="logo">
+        <a href="/" className="logo">
           JEFFREY
-        </div>
+        </a>
 
         <div className="info-box">
           <h4>Email</h4>
@@ -82,8 +82,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
-
     </section>
   );
 }
