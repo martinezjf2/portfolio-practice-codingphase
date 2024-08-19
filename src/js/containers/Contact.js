@@ -16,6 +16,35 @@ export default function Contact() {
         </nav>
       </section>
 
+      {/* Info Area */}
+      <section className="info-section">
+        <div href="/" className="logo">
+          JEFFREY
+        </div>
+
+        <div className="info-box">
+          <h4>Email</h4>
+          <p>martinezjf2@gmail.com</p>
+          <h4>Phone</h4>
+          <p>123-456-7890</p>
+          <h4>Find Me On</h4>
+          <div className="icon-section">
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Content Area */}
       <section className="content-area">
         <div className="img-container">
@@ -54,34 +83,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Info Area */}
-      <section className="info-section">
-        <a href="/" className="logo">
-          JEFFREY
-        </a>
 
-        <div className="info-box">
-          <h4>Email</h4>
-          <p>martinezjf2@gmail.com</p>
-          <h4>Phone</h4>
-          <p>123-456-7890</p>
-          <h4>Find Me On</h4>
-          <div className="icon-section">
-            <a href="#">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </div>
-        </div>
-      </section>
     </section>
   );
 }

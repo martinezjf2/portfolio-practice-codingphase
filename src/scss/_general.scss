@@ -1,0 +1,57 @@
+.primary-btn {
+  background: $color1;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: $color3;
+  padding: 15px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background: black;
+    color: $color3;
+
+  }
+}
+
+.contact-btn {
+    text-decoration: none;
+  border: 4px solid $color1;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: $color1;
+  padding: 12px 27px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    border-color: $hoverColor;
+  }
+}
+
+.ghost-btn {
+    text-decoration: none;
+  border: 4px solid $color1;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: $color1;
+  padding: 12px 27px;
+  margin-right: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    border-color: $hoverColor;
+  }
+}

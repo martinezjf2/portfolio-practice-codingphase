@@ -1,16 +1,14 @@
 .home {
   .info-section {
     width: 35%;
-    
   }
-  
+
   .content-area {
     margin-left: 35%;
     background: $color3;
     width: 65%;
     height: 100%;
 
-    
     .img-container {
       width: 30%;
       display: inline-block;
@@ -28,9 +26,9 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        -webkit-box-shadow: 0px 0px 74px 17px rgba(0,0,0,0.34);
-        -moz-box-shadow: 0px 0px 74px 17px rgba(0,0,0,0.34);
-        box-shadow: 0px 0px 74px 17px rgba(0,0,0,0.34);
+        -webkit-box-shadow: 0px 0px 74px 17px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: 0px 0px 74px 17px rgba(0, 0, 0, 0.34);
+        box-shadow: 0px 0px 74px 17px rgba(0, 0, 0, 0.34);
       }
     }
     .profile-section {
@@ -60,6 +58,140 @@
           font-weight: 300;
           line-height: 1.4;
           margin: 0 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+// Phone
+@media (min-width: 0) and (max-width: 767px) {
+  .home {
+    .menu-icon {
+      top: -3px;
+      color: white;
+      right: 20px;
+      .fa {
+        color: white;
+      }
+    }
+    .info-section {
+      // display: none;
+      position: static;
+      padding: 10px 20px;
+      .logo {
+        height: 50px;
+        width: 70px;
+        font-size: 0.7rem;
+      }
+      .info-box {
+        display: none;
+      }
+    }
+    .content-area {
+      margin-left: 0;
+      width: 100%;
+      position: relative;
+      overflow: auto;
+
+      .profile-section {
+        position: absolute;
+        width: 100%;
+        float: right;
+        padding: 20% 20px 0;
+        top: 0;
+        max-width: 400px;
+
+        .ghost-btn,
+        .primary-btn,
+        .contact-btn {
+          margin-bottom: 20px;
+        }
+      }
+
+      .img-container {
+        padding: 56px 20px 0;
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  .home {
+    .content-area {
+      .profile-section {
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+        .ghost-btn,
+        .primary-btn,
+        .contact-btn {
+          margin-bottom: 20px;
+        }
+      }
+      .img-container {
+        padding: 56px 20px 0;
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home {
+    .content-area {
+      .profile-section {
+        width: 70%;
+        padding: 20% 60px 0;
+        max-width: 800px;
+        .ghost-btn,
+        .primary-btn,
+        .contact-btn {
+          margin-bottom: 20px;
+        }
+      }
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// extra big
+@media (min-width: 1200px) {
+  .home {
+    .content-area {
+      .profile-section {
+        width: 70%;
+        max-width: 800px;
+        padding: 20% 60px 0;
+        .ghost-btn,
+        .primary-btn,
+        .contact-btn {
+          margin-bottom: 20px;
+        }
+      }
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-img {
+          // position: static;
+          // width: 100%;
         }
       }
     }

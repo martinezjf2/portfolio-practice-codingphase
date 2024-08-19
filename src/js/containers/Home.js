@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Home() {
+export default function Home({handleClick, checkHamburger}) {
   return (
-    <section className="home">
+    <section className={`home ${checkHamburger}`} >
       <div className="menu-icon">
-        <i class="fa-solid fa-bars fa"></i>
+        <i class="fa-solid fa-bars fa" onClick={handleClick}></i>
         {/* <i class="fa-regular fa-circle-xmark fa"></i> */}
       </div>
       <section id="menu">
@@ -14,6 +14,35 @@ export default function Home() {
           <a href="/work">Portfolio</a>
           <a href="/contact">Contact</a>
         </nav>
+      </section>
+
+      {/* Info Area */}
+      <section className="info-section">
+        <div href="/" className="logo">
+          JEFFREY
+        </div>
+
+        <div className="info-box">
+          <h4>Email</h4>
+          <p>martinezjf2@gmail.com</p>
+          <h4>Phone</h4>
+          <p>123-456-7890</p>
+          <h4>Find Me On</h4>
+          <div className="icon-section">
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Content Area */}
@@ -39,37 +68,8 @@ export default function Home() {
             <a href="/resume" className="ghost-btn">
               Resume
             </a>
-            <a href="/contact" className="ghost-btn" style={{margin: "20px"}}>
+            <a href="/contact" className="contact-btn">
               Contact
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Info Area */}
-      <section className="info-section">
-        <a href="/" className="logo">
-          JEFFREY
-        </a>
-
-        <div className="info-box">
-          <h4>Email</h4>
-          <p>martinezjf2@gmail.com</p>
-          <h4>Phone</h4>
-          <p>123-456-7890</p>
-          <h4>Find Me On</h4>
-          <div className="icon-section">
-            <a href="#">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-facebook"></i>
             </a>
           </div>
         </div>
