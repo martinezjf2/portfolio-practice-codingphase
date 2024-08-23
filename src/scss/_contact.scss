@@ -113,12 +113,9 @@
   }
 }
 
-
-
-
 // Phone
-@media (min-width: 0) and (max-width: 767px) {
-  .home {
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact {
     .menu-icon {
       top: -3px;
       color: white;
@@ -145,13 +142,18 @@
       width: 100%;
       position: relative;
       overflow: auto;
-
-      .profile-section {
-        position: absolute;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .contact-section {
+        // position: absolute;
+        // display: block;
         width: 100%;
-        float: right;
+        float: left;
         padding: 20% 20px 0;
-        top: 0;
+        // top: 0;
         max-width: 400px;
 
         .ghost-btn,
@@ -163,9 +165,14 @@
 
       .img-container {
         padding: 56px 20px 0;
-        .user-img {
+        width: 100%;
+        height: auto;
+
+        .form-section {
           position: static;
           width: 100%;
+          height: auto;
+          overflow: auto;
         }
       }
     }
@@ -174,9 +181,10 @@
 
 // Tablet
 @media (min-width: 768px) and (max-width: 991px) {
-  .home {
+  .contact {
     .content-area {
-      .profile-section {
+      height: auto;
+      .contact-section {
         width: 70%;
         float: right;
         padding: 20% 20px 0;
@@ -188,22 +196,47 @@
       }
       .img-container {
         padding: 56px 20px 0;
-        .user-img {
+        height: auto;
+
+        .form-section {
           position: static;
           width: 100%;
+          height: auto;
+          overflow: auto;
         }
+      }
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
       }
     }
   }
 }
 
+// Laptop
 @media (min-width: 992px) and (max-width: 1199px) {
-  .home {
+  .contact {
+    .info-section {
+      .icon-section {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
     .content-area {
-      .profile-section {
+      height: auto;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .contact-section {
         width: 70%;
         padding: 20% 60px 0;
         max-width: 800px;
+        float: left;
         .ghost-btn,
         .primary-btn,
         .contact-btn {
@@ -213,10 +246,15 @@
       .img-container {
         padding: 56px 20px 0;
         float: left;
+        height: auto;
+        width: 100%;
 
-        .user-img {
+        .form-section {
           position: static;
           width: 100%;
+          float: left;
+          height: auto;
+          overflow: auto;
         }
       }
     }
@@ -225,9 +263,9 @@
 
 // extra big
 @media (min-width: 1200px) {
-  .home {
+  .contact {
     .content-area {
-      .profile-section {
+      .contact-section {
         width: 70%;
         max-width: 800px;
         padding: 20% 60px 0;
@@ -241,11 +279,43 @@
         padding: 56px 20px 0;
         float: left;
 
-        .user-img {
+        .form-section {
           // position: static;
           // width: 100%;
+          left: 157px;
+          width: 400px;
         }
       }
     }
   }
 }
+
+@media (min-width: 1500px) {
+  .contact {
+    .content-area {
+      .contact-section {
+        width: 70%;
+        max-width: 800px;
+        padding: 20% 60px 0;
+        .ghost-btn,
+        .primary-btn,
+        .contact-btn {
+          margin-bottom: 20px;
+        }
+      }
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .form-section {
+          // position: static;
+          // width: 100%;
+          left: 250px;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+
