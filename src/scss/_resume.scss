@@ -11,7 +11,7 @@
     overflow: hidden;
 
     .main-category {
-      margin-bottom: 36px ;
+      margin-bottom: 36px;
       h1 {
         font-weight: 700;
         font-size: 2.5rem;
@@ -48,6 +48,159 @@
             margin-bottom: 1rem;
           }
         }
+      }
+    }
+  }
+}
+
+// Phone
+@media (min-width: 0px) and (max-width: 767px) {
+  html,
+  body {
+    height: auto;
+  }
+  .resume {
+    .menu-icon {
+      top: -3px;
+      color: white;
+      right: 20px;
+      .fa {
+        color: white;
+      }
+    }
+    .info-section {
+      // display: none;
+      position: static;
+      padding: 10px 20px;
+      .logo {
+        height: 50px;
+        width: 70px;
+        font-size: 0.7rem;
+      }
+      .info-box {
+        display: none;
+      }
+    }
+    .content-area {
+      margin-left: 0;
+      width: 100%;
+      position: relative;
+      overflow: auto;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .scroll-section {
+        padding: 50px 20px;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+      }
+
+      .main-category {
+        width: 100%;
+        .xp-section {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  .resume {
+    .info-section {
+      width: 30%;
+      padding: 56px 20px;
+      .icon-section {
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .content-area {
+      width: 70%;
+      height: auto;
+      margin-left: 30%;
+
+      
+
+      .main-category {
+        // width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+        height: auto;
+        padding: 20px 0px;
+        .xp-section {
+          .xp-box {
+            padding: 0;
+          }
+        }
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resume {
+    .info-section {
+      .icon-section {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .content-area {
+      height: auto;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// extra big
+@media (min-width: 1200px) and (max-width: 1500px){
+  .resume {
+    .content-area {
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }
+}
+
+// Extra Extra big screen
+
+@media (min-width: 1501px) {
+  .resume {
+    .content-area {
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
       }
     }
   }

@@ -10,7 +10,7 @@ export default function Work({ handleClick, checkHamburger }) {
       <section id="menu">
         <nav>
           <a href="/">Home</a>
-          <a href="/">About</a>
+          <a href="/resume">About</a>
           <a href="/work">Portfolio</a>
           <a href="/contact">Contact</a>
         </nav>

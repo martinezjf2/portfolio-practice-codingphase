@@ -38512,7 +38512,7 @@ function Home(_ref) {
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
     href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "/"
+    href: "/resume"
   }, "About"), _react.default.createElement("a", {
     href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
@@ -38587,7 +38587,7 @@ function Resume(_ref) {
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
     href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "/"
+    href: "/resume"
   }, "About"), _react.default.createElement("a", {
     href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
@@ -38675,7 +38675,7 @@ function Work(_ref) {
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
     href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "/"
+    href: "/resume"
   }, "About"), _react.default.createElement("a", {
     href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
@@ -38754,7 +38754,7 @@ function Contact(_ref) {
   }, _react.default.createElement("nav", null, _react.default.createElement("a", {
     href: "/"
   }, "Home"), _react.default.createElement("a", {
-    href: "/"
+    href: "/resume"
   }, "About"), _react.default.createElement("a", {
     href: "/work"
   }, "Portfolio"), _react.default.createElement("a", {
@@ -38934,7 +38934,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53507" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61657" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

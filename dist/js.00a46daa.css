@@ -308,6 +308,93 @@ table {
           font-size: 1rem;
           margin-bottom: 1rem; }
 
+@media (min-width: 0px) and (max-width: 767px) {
+  html,
+  body {
+    height: auto; }
+  .resume .menu-icon {
+    top: -3px;
+    color: white;
+    right: 20px; }
+    .resume .menu-icon .fa {
+      color: white; }
+  .resume .info-section {
+    position: static;
+    padding: 10px 20px; }
+    .resume .info-section .logo {
+      height: 50px;
+      width: 70px;
+      font-size: 0.7rem; }
+    .resume .info-section .info-box {
+      display: none; }
+  .resume .content-area {
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+    overflow: auto; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .resume .content-area .scroll-section {
+      padding: 50px 20px;
+      width: 100%;
+      height: auto;
+      overflow: auto; }
+    .resume .content-area .main-category {
+      width: 100%; }
+      .resume .content-area .main-category .xp-section {
+        grid-template-columns: 1fr; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .resume .info-section {
+    width: 30%;
+    padding: 56px 20px; }
+    .resume .info-section .icon-section a {
+      font-size: 1.2rem; }
+  .resume .content-area {
+    width: 70%;
+    height: auto;
+    margin-left: 30%; }
+    .resume .content-area .main-category {
+      float: left;
+      padding: 20% 20px 0;
+      height: auto;
+      padding: 20px 0px; }
+      .resume .content-area .main-category .xp-section .xp-box {
+        padding: 0; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .resume .info-section .icon-section a {
+    font-size: 1.4rem; }
+  .resume .content-area {
+    height: auto; }
+    .resume .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .resume .content-area .img-container {
+      padding: 56px 20px 0;
+      float: left;
+      height: auto;
+      width: 100%; } }
+
+@media (min-width: 1200px) {
+  .resume .content-area:after {
+    content: "";
+    display: table;
+    clear: both; } }
+
+@media (min-width: 1500px) {
+  .resume .content-area:after {
+    content: "";
+    display: table;
+    clear: both; } }
+
 .work .info-section {
   width: 20%; }
 
